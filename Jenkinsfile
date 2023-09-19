@@ -4,10 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh '
-		    echo $PATH
- 		    go version
-		   '
+                sh 'echo $PATH'
             }
         }
     }
