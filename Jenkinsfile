@@ -3,8 +3,8 @@ pipeline {
     agent any
     stages {
         stage('build') {
-            steps withEnv(PATH='$PATH:/usr/local/go/bin') {
-                sh 'echo $PATH'
+            steps {
+                sh 'go version'
             }
         }
     }
